@@ -63,6 +63,9 @@ public class condtionVariable {
                   System.out.println("You can get a fincial aid");
 
                 }
+                else{
+                  System.out.println("You can not get a fincial aid");
+                }
             }  
         
             else{
@@ -74,7 +77,34 @@ public class condtionVariable {
         }
 
 
+        // services chage fee for a transaction 
+        final int BASLINE_fee = 10;
+        double amountOfCheck;
+        double total_services_fee;
 
+        System.out.println("Enter the amount iof check you want to deposit");
+        amountOfCheck =keyboard.nextInt();
+        keyboard.nextLine();
+
+        if(amountOfCheck <20){
+           double commercialCheckFee = .10;
+           total_services_fee = BASLINE_fee  + (commercialCheckFee * amountOfCheck);
+        }
+        else if((amountOfCheck >=20) && (amountOfCheck <=39) ){
+           double commercialCheckFee = .08;
+           total_services_fee = BASLINE_fee  + (commercialCheckFee * amountOfCheck);
+        }
+        else if((amountOfCheck >=40) &&(amountOfCheck <=59) ){
+           double commercialCheckFee = .06;
+           total_services_fee = BASLINE_fee  + (commercialCheckFee * amountOfCheck);
+        }
+        else{
+           double commercialCheckFee = .04;
+           total_services_fee = BASLINE_fee  + (commercialCheckFee * amountOfCheck);
+        }
+
+
+        System.out.println("The amount of check is " + amountOfCheck + " and the total fee charge is " + total_services_fee);
 
         keyboard.close();
         
