@@ -9,11 +9,16 @@ import java.io.IOException;
 public class writingToFile {
     public static void main(String[] args) throws IOException  {
 
+
+
+        
         // writing to an existing file
         FileWriter fwrite = new FileWriter("school.txt",true);
+    
         PrintWriter outputFile = new PrintWriter(fwrite);
         outputFile.println("Names");
         outputFile.close();
+
 
 
 
@@ -24,7 +29,14 @@ public class writingToFile {
         otherFile.println("jdmd"); 
         otherFile.println("jdmd");
         otherFile.close();
+
+        // reading from a file
         File file =new File("school.txt");
+
+        if(!file.exists()){
+            System.out.println("The file does exist");
+         }
+
         Scanner inputFile = new Scanner(file);
 
         while(inputFile.hasNext()){
