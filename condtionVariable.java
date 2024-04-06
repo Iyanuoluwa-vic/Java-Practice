@@ -106,7 +106,7 @@ public class condtionVariable {
 
         System.out.println("The amount of check is " + amountOfCheck + " and the total fee charge is " + total_services_fee);
 
-        keyboard.close();
+       
         */
 
 
@@ -128,5 +128,7 @@ public class condtionVariable {
             }
             System.out.println(i);
         }
+
+         keyboard.close();
     }
 }
