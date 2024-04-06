@@ -12,7 +12,7 @@ public class writingToFile {
         // writing to an existing file
         FileWriter fwrite = new FileWriter("school.txt",true);
         PrintWriter outputFile = new PrintWriter(fwrite);
-        outputFile.println("Name");
+        outputFile.println("Names");
         outputFile.close();
 
 
