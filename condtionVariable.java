@@ -7,7 +7,7 @@ public class condtionVariable {
         Scanner keyboard = new Scanner(System.in);
        
 
-
+/* 
 
         // this is used to caculate Grade of student  base on their score
          int grade =keyboard.nextInt();
@@ -107,6 +107,26 @@ public class condtionVariable {
         System.out.println("The amount of check is " + amountOfCheck + " and the total fee charge is " + total_services_fee);
 
         keyboard.close();
-        
+        */
+
+
+
+        // using a break statment
+        // cause the loop to terminate
+        for(int i =0; i <= 5; i++){
+            if(i == 3){
+                break;
+            }
+            System.out.println(i);
+        }
+
+        // using the continues statment
+        // it cause it to stop current itteration and start new
+         for(int i =0; i <= 5; i++){
+            if(i == 3){
+                continue;
+            }
+            System.out.println(i);
+        }
     }
 }
