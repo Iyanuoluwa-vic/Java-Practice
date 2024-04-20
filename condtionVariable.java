@@ -113,22 +113,57 @@ public class condtionVariable {
 
         // using a break statment
         // cause the loop to terminate
-        for(int i =0; i <= 5; i++){
-            if(i == 3){
-                break;
-            }
-            System.out.println(i);
-        }
+        // for(int i =0; i <= 5; i++){
+        //     if(i == 3){
+        //         break;
+        //     }
+        //     System.out.println(i);
+        // }
 
         // using the continues statment
         // it cause it to stop current itteration and start new
-         for(int i =0; i <= 5; i++){
-            if(i == 3){
-                continue;
-            }
-            System.out.println(i);
-        }
+        //  for(int i =0; i <= 5; i++){
+        //     if(i == 3){
+        //         continue;
+        //     }
+        //     System.out.println(i);
+        // }
 
-         keyboard.close();
+
+
+
+
+        // CACULATING THE aAMOUNT OF POINT EARN BASED ON BOOK PURCHASED
+        // int totalPoint;
+
+        // int numberOfBook;
+
+        // System.out.println("Enter the number of book you purchased");
+        // numberOfBook =keyboard.nextInt();
+
+        // if(numberOfBook ==0){
+        //    totalPoint =0;
+        // }
+        // else if(numberOfBook == 1){
+        //     totalPoint =5;
+        // }
+        // else if(numberOfBook == 2){
+        //     totalPoint =15;
+        // }
+        // else if(numberOfBook == 3){
+        //     totalPoint =30;
+        // }
+        // else{
+        //     totalPoint =60;
+        // }
+
+
+        // System.out.println("The number of book you bought is " + numberOfBook + " anmd the number of point is " + totalPoint);
+
+
+        
+        
+        keyboard.close();
+
     }
 }
