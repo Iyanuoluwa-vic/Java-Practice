@@ -161,7 +161,40 @@ public class condtionVariable {
         // System.out.println("The number of book you bought is " + numberOfBook + " anmd the number of point is " + totalPoint);
 
 
-        
+        // PARCKAGER PURCHASED DETERMINE THE AMOUNT OF DISCOUNT
+
+        int retailPrice =99;
+        int packagePurchased;
+        double discountTotalPrice;
+        int discountNumber;
+
+        System.out.println("Enter the amounmt of package you purchased");
+
+        packagePurchased =keyboard.nextInt();
+
+        if((packagePurchased >=10 ) && (packagePurchased <=19)){
+            discountTotalPrice =(.2 * retailPrice) *packagePurchased; 
+            discountNumber =20;
+        }
+        else if((packagePurchased >=20 ) && (packagePurchased <=49)){
+            discountTotalPrice =.3 * (retailPrice *packagePurchased); 
+              discountNumber =30;
+        }
+        else if((packagePurchased >=50 ) && (packagePurchased <=99)){
+            discountTotalPrice =.4 * (retailPrice *packagePurchased); 
+              discountNumber =40;
+        }
+        else if((packagePurchased >=100 )){
+            discountTotalPrice =.5 * (retailPrice *packagePurchased); 
+            discountNumber =50;
+        }
+        else{
+            discountTotalPrice=packagePurchased *retailPrice;
+            discountNumber=0;
+        }
+
+        System.out.println("The number of package purchased was " + packagePurchased + " and the retail price is " + retailPrice + 
+        "\n and the discount given was " + discountNumber +"% " + " and the total price for the product is " + discountTotalPrice);
         
         keyboard.close();
 
