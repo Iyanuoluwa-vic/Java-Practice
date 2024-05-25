@@ -29,9 +29,23 @@ public class singlDimesionArray {
 
     }
 
-    public void display(){
-        // for(){
+    // array traversal
+    public void traveral(){
+        for(int i=0; i < array.length; i++){
+               System.out.println(array[i]);
+        }
+    }
 
-        // }
+
+    public void searchInArray(int valueToSearch){
+        for(int i=0; i <array.length; i++){
+            if(array[i] == valueToSearch){
+                System.out.println("Value was found in the array in index " + i);
+                return;
+            }
+
+         
+        }
+        System.out.println("Value was not found in the array ");
     }
 }
